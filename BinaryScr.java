@@ -37,8 +37,6 @@ public class BinaryScr {
     System.out.println("Enter the key to be searched: ");
     int key = in.nextInt();
 
-    
-    // int print = binaryScr(arr, key);
     System.out.println(binaryScr(arr, key));
     
   }
