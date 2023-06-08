@@ -35,8 +35,7 @@ public class BinaryScr {
       int mid = (low + high) / 2;
       if (arr[mid] == key) {
         return mid;
-      } else if (arr[mid] > key) {
-        
+      } else if (arr[mid] > key) {   
         high = mid - 1;
       } else {
         low = mid + 1;
