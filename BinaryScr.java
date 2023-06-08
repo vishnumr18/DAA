@@ -18,7 +18,7 @@ public class BinaryScr {
       }
     }
     // System.out.println("The element is not found!!!!");
-    return -1;
+    
   }
 
   public static void main(String[] args) {
@@ -37,6 +37,8 @@ public class BinaryScr {
     System.out.println("Enter the key to be searched: ");
     int key = in.nextInt();
 
+    
+    // int print = binaryScr(arr, key);
     System.out.println(binaryScr(arr, key));
     
   }
