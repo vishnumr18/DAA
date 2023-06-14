@@ -1,35 +1,36 @@
 import java.util.*;
 
 public class BubleSort {
-  public static void printArr(int arr[]) {
-    for (int i = 0; i < arr.length-1; i++) {
-      System.out.print(arr[i] + " ");
-    }
-  }
 
-  public static void bubbleSort(int arr[]) {
+  public void bubbleSort(long arr[]) {
     for (int i = 0; i < arr.length-1; i++) {
       for (int j = 0; j < arr.length -1 - i; j++) {
         if (arr[j] > arr[j + 1]) {
-          int temp = arr[j];
+          long temp = arr[j];
           arr[j] = arr[j + 1];
           arr[j + 1] = temp;
         }
       }
     }
-    printArr(arr);
   }
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-
-    System.out.println("Enter the number of elements: ");
-    int n = in.nextInt();
-
-    int arr[] = new int[n];
-    System.out.format("Enter the %d elements: ",n);
-    for (int i = 0; i < n; i++) {
-      arr[i] = in.nextInt();
+    long arr[] = new long[6000];
+    Random rand = new Random();
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = rand.nextInt(1000);
+      System.out.print(arr[i]+" ");
     }
-    bubbleSort(arr);
+    BubleSort bs = new BubleSort();
+    long start = System.nanoTime();
+    bs.bubbleSort(arr);
+    long end = System.nanoTime();
+
+    long duriation= end - start;
+
+    double elapsedTime = (double)duriation/1_000_000_000;
+
+    System.out.println("\nThe Sorted array is : ");
+    System.out.println(Arrays.toString(arr));
+    System.out.println("The time taken to sort "+arr.length+" elements is: "+elapsedTime);
   }
 }
