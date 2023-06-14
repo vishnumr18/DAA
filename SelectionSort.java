@@ -22,7 +22,7 @@ public class SelectionSort {
     
     for (int i = 0; i < arr.length-2; i++) {
       int smallest = i;
-      for (int j = i + 1; j < arr.length; j++) {
+      for (int j = i + 1; j < arr.length-1; j++) {
         if (arr[smallest] > arr[j]) {
           smallest = j;
         }
@@ -33,5 +33,8 @@ public class SelectionSort {
     }
     printArr(arr);
     System.out.println();
+  }
+
+  public void selecSort(long[] arr) {
   }
 }
