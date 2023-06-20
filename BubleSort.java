@@ -14,7 +14,7 @@ public class BubleSort {
     }
   }
   public static void main(String[] args) {
-    long arr[] = new long[6000];
+     long arr[] = new long[6000];
     Random rand = new Random();
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand.nextInt(1000);
