@@ -33,7 +33,7 @@ public class QuickSort {
   public static void main(String[] args) {
     Random rand = new Random();
 
-    long[] arr = new long[50000];
+    long[] arr = new long[100000];
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand.nextInt(1000);
       System.out.print(arr[i]+" ");

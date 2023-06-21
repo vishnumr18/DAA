@@ -14,7 +14,7 @@ public class BubleSort {
     }
   }
   public static void main(String[] args) {
-     long arr[] = new long[6000];
+    long arr[] = new long[100000];
     Random rand = new Random();
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand.nextInt(1000);
@@ -31,6 +31,6 @@ public class BubleSort {
 
     System.out.println("\nThe Sorted array is : ");
     System.out.println(Arrays.toString(arr));
-    System.out.println("The time taken to sort "+arr.length+" elements is: "+elapsedTime);
+    System.out.println("The time taken to sort "+arr.length+" elements is: "+elapsedTime+ " seconds");
   }
 }

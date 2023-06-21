@@ -18,7 +18,7 @@ public class SelectionSortET {
   }
   public static void main(String[] args) {
 
-    long arr[]= new long[6000];
+    long arr[]= new long[100000];
     Random rand = new Random();
 
     for (int i = 0; i < arr.length; i++) {
